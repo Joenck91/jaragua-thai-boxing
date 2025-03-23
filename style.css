@@ -1,0 +1,42 @@
+/*---------- BASE ----------*/
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+outline: 1px dotted red;
+}
+html, body{
+    max-width: 100%;
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+body{
+    overflow: x-hidden;
+}
+
+/*---------- LAYOUT ----------*/
+.ulBars{
+    
+}
+.bars{
+    list-style-type: none;
+    width: 30px;
+    border: 2px solid white;
+    margin: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+.backMain{
+    background-repeat: no-repeat;
+    background-position: top;
+    background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.5)), 
+                url('img/logo-jtb.png');
+    background-size:cover;
+}
+
+/*---------- MODULE ----------*/
+
+/*---------- STATE ----------*/
+
+/*---------- THEME ----------*/
