@@ -12,68 +12,33 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.estatico main{
-    overflow:auto;
+main{
+  overflow:auto;/* Ativa barra de rolagem no conteudo da tea sem empurrar o menu para cima */
 }
-
 ul {
-  width: fit-content;
+  width: fit-content;/* Deixa as opções do menu no tamanho das palavras*/
 }
 
 /*---------- LAYOUT ----------*/
-
-.bars {
-  list-style-type: none;
-  width: 30px;
-  border: 2px solid white;
-  margin: 2px;
-  background-color: white;
-  border-radius: 2px;
-}
-.bars2 {
-  list-style-type: none;
-  width: 30px;
-  border: 2px solid black;
-  margin: 2px;
-  background-color: black;
-  border-radius: 2px;
-}
-.estatico {
+.body-background {/* Fundo da pagina com logo estatica*/
   background-repeat: no-repeat;
   background: linear-gradient(
       rgba(250, 250, 250, 0.8),
       rgba(250, 250, 250, 0.8)
     ),
-    url("img/logo-jtb.png");
+    url("src/img/logo-jtb-quadrada.png");
   background-size:contain;
   background-repeat: no-repeat;
   background-clip: border-box;
   background-position: center top;
   background-attachment: fixed;
 }
-.bandHover:hover {
-  background-color: #ed1c24;
-  padding: 7px;
-  border-radius: 5px;
-  color: #241d4f !important;
-  font-size: 18px;
-}
-.staticHover:hover {
-  background: linear-gradient(
-      rgba(250, 250, 250, 0.8),
-      rgba(250, 250, 250, 0.8)
-    ),
-    url("img/bandeira.jpeg");
-  background-size: contain;
-  background-position: center center;
-  padding: 7px;
-  border-radius: 5px;
-  color: #241d4f !important;
-  font-size: 18px;
-  width: fit-content;
-  border: 1px solid red;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
+
+
+
+
+
 .logo {
   border-radius: 100%;
 }
@@ -82,6 +47,45 @@ ul {
 }
 
 /*---------- MODULE ----------*/
+.butttonBars {/* Cria barras do menu em telas menores*/
+  list-style-type: none;
+  width: 30px;
+  border: 2px solid black;
+  margin: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.menu-item:hover {/* Opções do menu de navegação do cabeçalho */
+  background: linear-gradient(
+      rgba(250, 250, 250, 0.8),
+      rgba(250, 250, 250, 0.8)
+    ),
+    url("src/img/bandeira.jpeg");
+  background-size: contain;
+  background-position: center center;
+  padding: 7px;
+  border-radius: 5px;
+  color: #241d4f !important;
+  font-size: 18px;
+  width: fit-content;
+  border: 1px solid #A51931;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu{
+  border-color:#CEDBE8 !important;
+  background-color: #fbfbfb !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-item:hover{
+  background-color: #CEDBE8 !important;
+  color: #fbfbfb !important;
+}
+li .dropdown-item:hover{
+  color: black !important;
+  width: 100% !important;
+}
+
 
 /*---------- STATE ----------*/
 
