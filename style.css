@@ -77,7 +77,8 @@ ul {
 .logo {
   border-radius: 100%;
 }
-.headerEstatico{
+.textAlt{
+    min-height: 500px;
 }
 
 /*---------- MODULE ----------*/
