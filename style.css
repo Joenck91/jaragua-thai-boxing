@@ -41,17 +41,19 @@ ul {
 .home-primeira-div{
   min-height: 80vh;
 }
-
-
-
-
-
-.logo {
-  border-radius: 100%;
+.home-depoimentos{
+  background-color: #FBFBFB;
 }
-.textAlt{
-    min-height: 500px;
-}
+
+
+
+
+
+
+
+
+
+
 
 /*---------- MODULE ----------*/
 .butttonBars {/* Cria barras do menu em telas menores*/
@@ -93,7 +95,7 @@ li .dropdown-item:hover{
   width: 100% !important;
 }
 video{
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.5  ), 0 -8px 50px rgba(0, 0, 0, 0.5  );
+  box-shadow: 0 -8px 50px rgba(0, 0, 0, 0.5  );
 }
 
 
