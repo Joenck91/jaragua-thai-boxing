@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #FBFBFB;
 }
 html{
   background-color: #FBFBFB;;
@@ -20,6 +21,7 @@ header{
 }
 main{
   overflow:auto;/* Ativa barra de rolagem no conteudo da tea sem empurrar o menu para cima */
+  background-color: #FBFBFB;
 }
 ul {
   width: fit-content;/* Deixa as opções do menu no tamanho das palavras*/
@@ -56,13 +58,21 @@ ul {
 
 
 /*---------- MODULE ----------*/
+nav button{
+  background-color: #FBFBFB!important;
+  border: 1px solid #241d4f!important;
+}
+
 .butttonBars {/* Cria barras do menu em telas menores*/
   list-style-type: none;
   width: 30px;
-  border: 2px solid black;
+  border: 2px solid #A51931;
   margin: 2px;
-  background-color: black;
   border-radius: 2px;
+}
+.nav-button-bar-center{
+  background-color: #241d4f;
+  border: none;
 }
 .navbar-nav{
   background-color: green!important;
