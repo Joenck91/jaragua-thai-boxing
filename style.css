@@ -12,6 +12,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+html{
+  background-color: #FBFBFB;;
+}
 header{
   z-index: 1000;
 }
@@ -22,27 +25,21 @@ ul {
   width: fit-content;/* Deixa as opções do menu no tamanho das palavras*/
 }
 /*---------- LAYOUT ----------*/
-.home-primeira-div{/* Fundo da pagina com logo estatica*/
-  background-repeat: no-repeat;
+.home-first-div{/* Fundo da pagina com logo estatica*/
   background: linear-gradient(
       rgba(250, 250, 250, 0.8),
       rgba(250, 250, 250, 0.8)
     ),
-    url("src/img/logo-jtb-quadrada.png");
-  background-position: center top;
-  background-size:contain;
-  background-repeat: no-repeat;
+    url("src/img/logo-jtb-quadrada.png") center top / contain no-repeat;
+  
   background-clip: border-box;
+  min-height: 400px;
 }
 .style-head, .style-subhead{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747); /* Sombra para melhor contraste */
 }
 .style-subhead{
   margin-bottom: 40px;
-}
-.home-primeira-div{
-
-  min-height: 400px;
 }
 .home-depoimentos{
   background-color: #FBFBFB;
@@ -107,6 +104,11 @@ li .dropdown-item:hover{
 }
 video{
   box-shadow: 0 -8px 50px rgba(0, 0, 0, 0.5  );
+}
+.carousel-caption{/* Textos do carousel*/
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fbfbfb;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747); /* Sombra para melhor contraste */
 }
 
 
