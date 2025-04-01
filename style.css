@@ -58,174 +58,33 @@ ul {
   margin-bottom: 40px;
 }
 
-.home-depoimentos {
-  background-color: #e5edf7;
-}
 
-.boxAtletas {
+
+.boxProf {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-.accordion-carousel-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+.carousel-item img{
+  width: 390px!important;
+  max-height: 390px!important;
+}
+.carousel-item-box-img{
+  width: 390px!important;
+  height: 390px!important;
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.slide1{
+  background-image: url('src/img/atletas/336175857_2827267350740148_5607347130947981797_n.jpg');
+}
+.slide2{
+  background-image: url('src/img/atletas/473986971_18482594224057410_8829578156243463011_n.jpg');
+}
+.slide3, .slide4, .slide5{
+  background-image: url('src/img/atletas/kika.jpg');
+  background-position: center center;
 }
 
-.accordion-carousel {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  overflow-y: hidden;
-  gap: 10px;
-  transition: 0.3s;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding: 10px 0;
-}
-
-.accordion-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.accordion-carousel li {
-  position: relative;
-  overflow: hidden;
-  flex: 0 0 80px;
-  border-radius: 50px;
-  opacity: 0.75;
-  cursor: pointer;
-  scroll-snap-align: start;
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.accordion-carousel li.active {
-  flex: 0 1 260px;
-  scale: 1;
-  z-index: 10;
-  opacity: 1;
-}
-
-.accordion-carousel li img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(0.5);
-}
-
-.accordion-carousel li .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  color: #fff;
-  padding: 15px;
-  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-
-.accordion-carousel li.active .content {
-  opacity: 1;
-  visibility: visible;
-}
-
-.accordion-carousel li .content span {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
-  scale: 0.85;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.accordion-carousel li.active .content span {
-  scale: 1;
-  opacity: 1;
-  visibility: visible;
-}
-
-.accordion-carousel h2 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 45px;
-  border-bottom: 2px solid #fff;
-  margin-bottom: 10px;
-  white-space: nowrap;
-}
-
-.accordion-carousel svg {
-  width: 40px;
-  height: 40px;
-  color: white;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 20;
-}
-
-.carousel-control.prev {
-  left: 0;
-}
-
-.carousel-control.next {
-  right: 0;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .accordion-carousel {
-    height: 300px;
-    gap: 5px;
-  }
-
-  .accordion-carousel li {
-    flex: 0 0 60px;
-  }
-
-  .accordion-carousel li.active {
-    flex: 0 1 200px;
-  }
-
-  .accordion-carousel h2 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .accordion-carousel-wrapper {
-    padding: 0 30px;
-  }
-}
 
 
 
