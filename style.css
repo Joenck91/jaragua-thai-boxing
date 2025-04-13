@@ -161,6 +161,23 @@ li .dropdown-item:hover {
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3), 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+.insta-card img {
+  max-width: 150px;
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+}
+
+.insta-card img:hover {
+  transform: scale(1.02);
+}
+
+.insta-card a:hover h3 {
+  color: #A51931; /* cor vermelha do tema */
+}
+
+
+
+
 
 /*---------- STATE ----------*/
 
